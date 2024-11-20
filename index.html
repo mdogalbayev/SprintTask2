@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f6f9;
+        }
+        header {
+            background-color: #5181b8;
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            font-size: 22px;
+            margin: 0;
+        }
+        header input {
+            width: 300px;
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+        nav {
+            width: 200px;
+            background-color: #fff;
+            height: 100vh;
+            padding: 20px 10px;
+            box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+        }
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #f0f0f0;
+        }
+        main {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .profile-header {
+            display: flex;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            margin-right: 40px;
+        }
+        .profile-info {
+            flex: 1;
+ 
+        }
+        .profile-photo a {
+            display: inline-block;
+            margin-top: 0px;
+            padding: 10px 20px;
+            background-color: #002855;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .profile-info h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .profile-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .statistics {
+            margin-top: 55px;
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+        .statistics div {
+            text-align: center;
+        }
+        .friends, .photos {
+            margin-top: 20px;
+            display: flex;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            gap: 10px;
+        }
+        .friends img, .photos img {
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+        }
+        .posts {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            margin-bottom: 20px;
+        }
+        .post h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+        .post p {
+            color: #333;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VK</h1>
+        <input type="text" placeholder="Поиск">
+    </header>
+
+    <nav>
+        <a href="#">Моя страница</a>
+        <a href="#">Новости</a>
+        <a href="#">Сообщения</a>
+        <a href="#">Друзья</a>
+        <a href="#">Группы</a>
+        <a href="#">Фотографии</a>
+        <a href="#">Музыка</a>
+        <a href="#">Видео</a>
+    </nav>
+
+    <main>
+        <div class="profile-header">
+            <div class="profile-photo">
+                <img src="ilyasl.png" alt="Profile Picture">
+                <h2></h2>
+                <a href="https://vk.com/zhuanyshev.ilyas">Редактировать</a>
+            </div>
+            <div class="profile-info">
+                <h2>Ilyas Zhuanyshev</h2>
+                <p>Life is good :)</p>
+                <p>День рождения:         26 мая 1989 г.</p>
+                <p>Город:                 Алматы</p>
+                <p>Семейное положение:    женат</p>
+                <div class="statistics">
+                    <div>
+                        <strong>1 331</strong>
+                        <p>друг</p>
+                    </div>
+                    <div>
+                        <strong>224</strong>
+                        <p>подписчика</p>
+                    </div>
+                    <div>
+                        <strong>95</strong>
+                        <p>фотографий</p>
+                    </div>
+                    <div>
+                        <strong>969</strong>
+                        <p>видеозаписей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="friends">
+            <h3>Друзья</h3>
+            <img src="1.jpeg" alt="Friend 1">
+            <img src="2.jpeg" alt="Friend 2">
+            <img src="3.jpeg" alt="Friend 3">
+            <img src="4.jpeg" alt="Friend 4">
+            <img src="5.jpeg" alt="Friend 5">
+            <img src="6.jpeg" alt="Friend 6">
+            <img src="7.jpeg" alt="Friend 7">
+        </div>
+
+        <div class="photos">
+            <h3>Мои фотографии</h3>
+            <img src="8.png" alt="Photo 1">
+            <img src="9.jpeg" alt="Photo 2">
+            <img src="10.jpeg" alt="Photo 3">
+            <img src="11.jpg" alt="Photo 4">
+        </div>
+
+        <div class="posts">
+            <div class="post">
+                <h3>Ilyas Zhuanyshev</h3>
+                <p>Ильяс Жуанышев, JAVA разработчик, преподаватель:
+
+                    "Работая Java-разработчиком в европейской IT-компании, я приобрел богатый опыт, который теперь делюсь с моими студентами в BITLAB ACADEMY. Важно понимать, что реальный мир программирования намного шире и разнообразнее, чем классические учебные курсы. Поэтому я стараюсь обогатить образовательный процесс своими знаниями и опытом, полученными в профессиональной среде.
+                    
+                    Общаясь с коллегами из Европы, я постоянно сталкиваюсь с новыми вызовами и решениями, которые затем переношу в учебную программу. Моя цель - не только научить студентов программированию на Java, но и показать, как эти навыки применяются в реальных проектах, в международной среде. Я стремлюсь вдохновить студентов на постоянное обучение и развитие, демонстрируя им, как технологические навыки могут открыть границы и предоставить глобальные возможности в их карьере."</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
